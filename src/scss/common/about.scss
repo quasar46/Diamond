@@ -1,0 +1,24 @@
+.about {
+  p {
+    max-width: 1000px;
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    @media (max-width: 699px) {
+      order: 1;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+  img {
+    border-radius: 16px;
+    @media (max-width: 699px) {
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 699px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

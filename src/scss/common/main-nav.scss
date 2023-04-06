@@ -1,0 +1,21 @@
+.main-nav {
+  width: 300px;
+  font-size: 16px;
+  font-weight: 400;
+
+
+  @media (max-width: 1339px) {
+    display: none;
+  }
+}
+
+.main-nav__links {
+  position: fixed;
+  top: 0;
+  left: 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}

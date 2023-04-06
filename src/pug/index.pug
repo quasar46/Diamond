@@ -1,0 +1,111 @@
+html(lang="en")
+    head
+        include modules/head
+    body 
+        include modules/header
+        .wrapper 
+            ._container
+                aside   
+                    .main-nav
+                        .main-nav__links  
+                            a(href="#about") О компании
+                            a(href="#products") Продукция
+                            a(href="#contacts") Контакты
+                .page 
+                    section.about#about
+                        h1 ООО «Даймонд» 
+                        p Производим средства защиты органов дыхания и широкий ассортимент спецшнуров (латексных нитей, оплетённых полиэфиром и х/б пряжей). Наша миссия — защита людей, поэтому мы производим интивидуальные средства защиты, гарантирующие безопасность в профессиональной деятельности и в быту.
+                        img(src="img/banner.png" alt="")
+
+                    section.cooperation 
+                        h2 сотрудничество с нами это :
+                        .cooperation__items 
+                            .cooperation__item
+                                h3 высококачественная продукция
+                                p На собственной производственной базе мы контролируем качество сырья и готовой продукции. Проверяем основные и вспомогательные материалы, производим пооперационный контроль за соблюдением установленного технологического режима, систематически контролируем состояние оборудования и условия производства.
+                            .cooperation__item
+                                h3 лояльность к клиентам
+                                p Поможем клиентам вовремя определить потребности и желания потребителей, чтобы удовлетворить их с максимальной пользой. Выбирая нашу компанию, вы получите высококачественную продукцию и обязательное соблюдение сроков поставок
+                            .cooperation__item
+                                h3 Быстрые поставки
+                                p Наши запасы продукции и собственная производственная база позволяют отправить продукцию в короткие сроки, а также гарантируют регулярное и бесперебойное снабжение вашей компании
+
+                    section.products#products
+                        h2 Наша продукция
+                        .products__wrapper.swiper 
+                            .swiper-wrapper 
+                                .swiper-slide
+                                    .card 
+                                        .card__picture 
+                                            img(src="img/card1.png" alt="")
+                                        .card__description 
+                                            p Полумаска фильтрующая для защиты от аэрозолей (респиратор) «Л-200»
+                                .swiper-slide
+                                    .card 
+                                        .card__picture 
+                                            img(src="img/card2.png" alt="")
+                                        .card__description 
+                                            p Полумаска фильтрующая для защиты от аэрозолей (респиратор) «ДАЙМОНД-СБ»
+                                .swiper-slide
+                                    .card 
+                                        .card__picture 
+                                            img(src="img/card3.png" alt="")
+                                        .card__description 
+                                            p Полумаска фильтрующая для защиты от аэрозолей (респиратор) «ДАЙМОНД-К» с клапаном выдоха
+                                .swiper-slide
+                                    .card 
+                                        .card__picture 
+                                            img(src="img/card4.png" alt="")
+                                        .card__description 
+                                            p Фильтры противоаэрозольные «ПФД-02»
+                                .swiper-slide
+                                    .card 
+                                        .card__picture 
+                                            img(src="img/card5.png" alt="")
+                                        .card__description 
+                                            p ЛАТЕКСНАЯ НИТЬ (СПЕЦШНУР ЭЛАСТИЧНЫЙ)
+
+                    section.feedback#contacts
+                        .feedback__contacts 
+                            h2 Свяжитесь <br> с нами
+                            .feedback__contacts-row
+                                span Наш адрес:
+                                p 305040, г. Курск,<br/>ул. 50 лет Октября, д 126/1
+                            .feedback__contacts-row
+                                span Телефон:
+                                a(href="tel:89202650212") +7 920 265-02-12
+                            .feedback__contacts-row
+                                span Электронная почта:
+                                a(href="mailto:info.diamond46@gmail.com") info.diamond46@gmail.com 
+                        .feedback__form
+                            div.feedback__form-title 
+                                | У Вашей компании остались вопросы? <br>Обратитесь в наш отдел продаж!
+                            form
+                                .feedback__inputs
+                                    label(for="") 
+                                        span Как вас зовут?
+                                        input(type="text" placeholder="Ваше имя" required)
+                                    label(for="")
+                                        span  Как с вами связаться?
+                                        input(type="text" placeholder="Ваш e-mail")
+                                    label(for="") 
+                                        span Что вы хотите?
+                                        textarea(placeholder="Отправить сообщение")
+                                .contacts__form-footer 
+                                    .contacts__form-accent
+                                        input(type="checkbox" id="accent" name="accent")
+                                        label(for="accent") 
+                                            p Я согласен с <a href="">политикой конфиденциальности </a> и правилами обработки персональных данных
+                                    button(type="submit" class="btn-default") Отправить
+
+
+        include modules/footer
+        include modules/modals
+        .sent-modal.overlay.hidden
+            .sent-modal__wrapper 
+                button.modal__close
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.94414 28L0 25.0559L11.0072 14L0 2.94414L2.94414 0L14 11.0072L25.0559 0L28 2.94414L16.9928 14L28 25.0559L25.0559 28L14 16.9928L2.94414 28Z" fill="rgba(83, 83, 83, 0.5)"/></svg>
+                h3.send-modal__title Сообщение <br> отправлено
+                p Наши менеджеры свяжутся с вами в ближайшее время
+
+    include modules/script

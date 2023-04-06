@@ -1,0 +1,78 @@
+.header {
+  border-bottom: 1px solid rgba(83, 83, 83, 0.1);
+  margin-bottom: 90px;
+  @media (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 699px) {
+    margin-bottom: 40px;
+  }
+}
+
+.header__wrapper {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Actay wide';
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--main-color-black);
+  }
+  @media (max-width: 699px) {
+    font-size: 20px;
+  }
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  a {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+  }
+  a:last-child {
+    font-family: "Actay wide";
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding: 0 20px;
+    border: 1px solid rgba(83, 83, 83, 1);
+    &:hover {
+      background-color: rgba(98, 149, 208, 1);
+      color: #fff;
+    }
+    &:focus {
+      border: 3px solid rgba(98, 149, 208, 1);
+      background-color: rgba(13, 75, 148, 1);
+      color: #fff;
+    }
+    &:active {
+      border: 3px solid rgba(13, 75, 148, 1);
+      background-color: rgba(98, 149, 208, 1);
+      color: #fff;
+    }
+    @media (max-width: 699px) {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 699px) {
+    .btn-default {
+      display: none;
+    }
+  }
+}

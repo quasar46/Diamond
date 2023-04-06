@@ -1,0 +1,136 @@
+// @import "utils/stylesheet";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import './node_modules/normalize.css/normalize';
+
+:root {
+  --main-black-color: rgba(83, 83, 83, 1);
+  --main-font: 'Actay';
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 18px;
+  color: var(--main-black-color);
+  font-family: var(--main-font);
+  font-family: Actay;
+}
+
+body.hidden {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover,
+  &:focus {
+    color: #6295d0;
+  }
+  &:active {
+    color: #0d4b94;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+._container {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 80px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 1599px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 1199px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 699px) {
+    padding: 0 10px;
+  }
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: 'Actay wide';
+  @media (max-width: 1199px) {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 699px) {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 56px;
+  line-height: 1.2;
+  font-family: 'Actay wide';
+  @media (max-width: 1199px) {
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+  @media (max-width: 699px) {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+
+section {
+  margin-bottom: 140px;
+  @media (max-width: 1199px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 699px) {
+    margin-bottom: 80px;
+  }
+}
+
+
+.swiper-wrapper {
+  height: auto;
+}
